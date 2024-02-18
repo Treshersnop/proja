@@ -1,0 +1,122 @@
+[
+  {
+    "model": "core.grade",
+    "pk": 1,
+    "fields": {
+      "numeral": 1,
+      "character": "А"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 2,
+    "fields": {
+      "numeral": 1,
+      "character": "Б"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 3,
+    "fields": {
+      "numeral": 1,
+      "character": "В"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 4,
+    "fields": {
+      "numeral": 2,
+      "character": "A"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 5,
+    "fields": {
+      "numeral": 2,
+      "character": "Б"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 6,
+    "fields": {
+      "numeral": 2,
+      "character": "В"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 7,
+    "fields": {
+      "numeral": 3,
+      "character": "A"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 8,
+    "fields": {
+      "numeral": 3,
+      "character": "Б"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 9,
+    "fields": {
+      "numeral": 3,
+      "character": "В"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 10,
+    "fields": {
+      "numeral": 3,
+      "character": "Г"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 11,
+    "fields": {
+      "numeral": 4,
+      "character": "A"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 12,
+    "fields": {
+      "numeral": 4,
+      "character": "Б"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 13,
+    "fields": {
+      "numeral": 5,
+      "character": "A"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 14,
+    "fields": {
+      "numeral": 6,
+      "character": "A"
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 15,
+    "fields": {
+      "numeral": 6,
+      "character": "Б"
+    }
+  }
+]

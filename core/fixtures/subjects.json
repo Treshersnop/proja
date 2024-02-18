@@ -1,0 +1,79 @@
+[
+  {
+    "model": "core.subject",
+    "pk": 1,
+    "fields": {
+      "name": "Математика"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 2,
+    "fields": {
+      "name": "История"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 3,
+    "fields": {
+      "name": "ОБЖ"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 4,
+    "fields": {
+      "name": "Физкультура"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 5,
+    "fields": {
+      "name": "Химия"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 6,
+    "fields": {
+      "name": "Физика"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 7,
+    "fields": {
+      "name": "География"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 8,
+    "fields": {
+      "name": "Биология"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 9,
+    "fields": {
+      "name": "Русский язык"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 10,
+    "fields": {
+      "name": "Информатика"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 11,
+    "fields": {
+      "name": "Литература"
+    }
+  }
+]

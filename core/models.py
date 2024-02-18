@@ -3,6 +3,7 @@ from datetime import date
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.db.models import Count
 
 DjangoUser = get_user_model()
 
@@ -128,17 +129,30 @@ class Pupil(UserProfile):
         on_delete=models.PROTECT,
         related_name='pupil_profile'
     )
+    grade = models.ForeignKey(
+        'Grade',
+        on_delete=models.CASCADE,
+        verbose_name='Класс',
+        related_name='pupils',
+        blank=True,
+        null=True
+    )
 
     class Meta:
         verbose_name = 'Ученик'
         verbose_name_plural = 'Ученики'
 
 
+class GradeManager(models.Manager):
+    def with_count_pupils(self):
+        return self.annotate(count_pupils=Count('pupils'))
+
+
 class Grade(models.Model):
     grade_id = models.BigAutoField(primary_key=True)
     numeral = models.SmallIntegerField('Число', validators=[MinValueValidator(1), MaxValueValidator(11)])
     character = models.CharField('Буква', max_length=1)
-    pupils = models.ForeignKey('Pupil', verbose_name='Ученики', related_name='grade', on_delete=models.CASCADE)
+    objects = GradeManager()
 
     class Meta:
         verbose_name = 'Класс'

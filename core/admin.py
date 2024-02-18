@@ -4,12 +4,6 @@ from django.utils.safestring import mark_safe
 from core import models
 
 
-@admin.register(models.User)
-class User(admin.ModelAdmin):
-    list_display = ('username', 'last_name', 'first_name')
-    search_fields = ('username', 'last_name', 'first_name')
-
-
 @admin.register(models.Teacher)
 class Teacher(admin.ModelAdmin):
     list_display = ('first_name', 'last_name', 'get_photo')
@@ -22,7 +16,6 @@ class Teacher(admin.ModelAdmin):
             )
 
     get_photo.short_description = 'Avatar'
-    get_photo.allow_tags = True
 
 
 @admin.register(models.Pupil)
